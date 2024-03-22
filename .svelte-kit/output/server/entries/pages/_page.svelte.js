@@ -34,15 +34,14 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
   if ($$props.title === void 0 && $$bindings.title && title !== void 0)
     $$bindings.title(title);
   return `<div class="${"w-64 h-[17rem] bg-cream-100 flex " + escape(cardOrder ? "flex-col-reverse" : "flex-col", true) + " gap-5 px-4 py-2 rounded-lg items-center justify-center mt-7"}"><div class="text-center"><h1 class="text-3xl">${escape(title)}</h1></div>
-    <div><img src="${"../src/lib/components/img/projectsCards/" + escape(image, true) + ".png"}" alt="project" class="rounded-lg"></div></div>`;
+    <div><img src="${"../src/lib/components/img/" + escape(image, true) + ".png"}" alt="project" class="rounded-lg"></div></div>`;
 });
 const ArrowsDescription = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { leftREM = 63 } = $$props;
   let { topREM = 0 } = $$props;
   let { description = "" } = $$props;
-  let { image = "" } = $$props;
+  let { imageArrow = "" } = $$props;
   let { imageHeight = 0 } = $$props;
-  let { imageWidth = "" } = $$props;
   let { flexType = "flex-row" } = $$props;
   if ($$props.leftREM === void 0 && $$bindings.leftREM && leftREM !== void 0)
     $$bindings.leftREM(leftREM);
@@ -50,16 +49,14 @@ const ArrowsDescription = create_ssr_component(($$result, $$props, $$bindings, s
     $$bindings.topREM(topREM);
   if ($$props.description === void 0 && $$bindings.description && description !== void 0)
     $$bindings.description(description);
-  if ($$props.image === void 0 && $$bindings.image && image !== void 0)
-    $$bindings.image(image);
+  if ($$props.imageArrow === void 0 && $$bindings.imageArrow && imageArrow !== void 0)
+    $$bindings.imageArrow(imageArrow);
   if ($$props.imageHeight === void 0 && $$bindings.imageHeight && imageHeight !== void 0)
     $$bindings.imageHeight(imageHeight);
-  if ($$props.imageWidth === void 0 && $$bindings.imageWidth && imageWidth !== void 0)
-    $$bindings.imageWidth(imageWidth);
   if ($$props.flexType === void 0 && $$bindings.flexType && flexType !== void 0)
     $$bindings.flexType(flexType);
   return `<div class="${"absolute z-50 left-[" + escape(leftREM, true) + "rem] top-[" + escape(topREM, true) + "rem] flex " + escape(flexType, true) + " justify-center items-center gap-2"}"><p class="text-2xl">${escape(description)}</p>
-    <img src="${"../src/lib/components/img/arrows/" + escape(image, true) + ".png"}" alt="arrow" class="${"h-" + escape(imageHeight, true) + " " + escape(imageWidth, true)}"></div>`;
+    <img src="${"../src/lib/components/img/" + escape(imageArrow, true) + ".png"}" alt="arrow" class="${"h-" + escape(imageHeight, true)}"></div>`;
 });
 const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div id="projects" class="h-screen w-full bg-screen-100 flex justify-center items-center">${validate_component(ArrowsDescription, "ArrowsDescription").$$render(
@@ -68,7 +65,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       leftREM: 15,
       topREM: 147,
       description: "First gig",
-      image: "firstGig",
+      imageArrow: "firstGig",
       imageHeight: 16
     },
     {},
@@ -81,7 +78,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       leftREM: 36,
       topREM: 170,
       description: "First game",
-      image: "firstGame",
+      imageArrow: "firstGame",
       imageHeight: 16,
       flexType: "flex-row-reverse"
     },
@@ -94,7 +91,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {
       topREM: 149,
       description: "Hand drawn",
-      image: "handDrawn",
+      imageArrow: "handDrawn",
       imageHeight: 20,
       flexType: "flex-col"
     },
@@ -108,7 +105,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       leftREM: 86,
       topREM: 166,
       description: "Hackathon",
-      image: "hackathon",
+      imageArrow: "hackathon",
       imageHeight: 28,
       flexType: "flex-col-reverse"
     },

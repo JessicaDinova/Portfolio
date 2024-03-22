@@ -29,10 +29,5 @@
 		"vite": "^4.2.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module",
-	"dependencies": {
-		"@types/three": "^0.157.2",
-		"dat.gui": "^0.7.9",
-		"three": "^0.157.0"
-	}
+	"type": "module"
 }

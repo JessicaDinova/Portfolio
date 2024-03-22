@@ -1,18 +1,17 @@
 <script>
-    export let leftREM = 63;
-    export let topREM = 0;
-    export let description = "";
-    export let image = "";
-    export let imageHeight = 0;
-    export let imageWidth = "";
+    export let leftREM = ""
+    export let topREM = ""
+    export let description = ""
+    export let imageArrow = ""
+    export let imageHeight = ""
     export let flexType = "flex-row"
 </script>
 
-<div class="absolute z-50 left-[{leftREM}rem] top-[{topREM}rem] flex {flexType} justify-center items-center gap-2">
-    <p class="text-2xl">{description}</p>
+<div class="absolute z-30 {leftREM} {topREM} flex {flexType} justify-center items-center gap-2">
+    <p class="text-3xl text-lavander-100">{description}</p>
     <img 
-    src="../src/lib/components/img/arrows/{image}.png"    
+    src="../src/lib/components/img/{imageArrow}.png"    
     alt="arrow"
-    class="h-{imageHeight} {imageWidth}"
+    class="{imageHeight}"
     >
 </div>

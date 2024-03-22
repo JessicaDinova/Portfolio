@@ -10,7 +10,7 @@
     </div>
     <div>
         <img
-        src="../src/lib/components/img/projectsCards/{image}.png"
+        src="../src/lib/components/img/{image}.png"
         alt="project"
         class="rounded-lg"
         />
