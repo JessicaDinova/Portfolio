@@ -4,7 +4,7 @@
     export let title;
 </script>
 
-<div class="w-64 h-[17rem] bg-cream-100 flex {cardOrder ? 'flex-col-reverse' : 'flex-col'} gap-5 px-4 py-2 rounded-lg items-center justify-center mt-7">
+<div class="relative w-64 h-[17rem] bg-cream-100 flex {cardOrder ? 'flex-col-reverse' : 'flex-col'} gap-5 px-4 py-2 rounded-lg items-center justify-center">
     <div class="text-center">
         <h1 class="text-3xl">{title}</h1>
     </div>

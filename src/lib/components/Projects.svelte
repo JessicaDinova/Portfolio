@@ -4,60 +4,20 @@
    import BorderSticker from "./BorderSticker.svelte";
 </script>
 
-<style>
+<!-- <style>
    .projects:hover {
       background-color: #313131;
-      -webkit-transition: background-color 180ms linear;
+      -webkit-transition: background-color 180ms ease-in;
    }
-</style>
+</style> -->
 
-<div
-   id="projects"
-   class="projects h-screen w-full bg-cream-100 flex justify-center items-center"
->
-   <BorderSticker
-      leftOfset="left-[14rem]"
-      topOfset="top-[151rem]"
-      imageSticker="boatSticker"
-      stickerHeight="h-12"
-   />
+<div id="projects" class="relative projects h-screen w-full bg-screen-100">
+   <!-- 
 
-   <BorderSticker
-      leftOfset="left-[27.5rem]"
-      topOfset="top-[150.5rem]"
-      imageSticker="villageLeft"
-      stickerHeight="h-20"
-   />
 
-   <BorderSticker
-   leftOfset="left-[42.5rem]"
-   topOfset="top-[166.5rem]"
-   imageSticker="villageRight"
-   stickerHeight="h-20"
-/>
 
-<BorderSticker
-leftOfset="left-[54rem]"
-topOfset="top-[150.5rem]"
-imageSticker="looneyTop"
-stickerHeight="h-[3.5rem]"
-/>
 
-<BorderSticker
-leftOfset="left-[67.5rem]"
-topOfset="top-[166.5rem]"
-imageSticker="screensaverLeft"
-stickerHeight="h-20"
-/>
-
-<BorderSticker
-leftOfset="left-[82.5rem]"
-topOfset="top-[150.3rem]"
-imageSticker="screensaverRight"
-stickerHeight="h-20"
-/>
-
-   <ArrowsDescription
+   <!-- <ArrowsDescription
       leftREM="left-[10rem]"
       topREM="top-[146rem]"
       description="First gig"
@@ -95,19 +55,71 @@ stickerHeight="h-20"
       class="absolute z-50 h-40 left-0 top-[173rem]"
       src="../src/lib/components/img/queen.png"
       alt="arrow"
-   />
-   <div class="w-full flex flex-row justify-center items-center gap-16">
-      <ProjectCard image="boatParking" title="Boat Haven" />
-      <ProjectCard
-         cardOrder={true}
-         image="curiousVillage"
-         title="Curious Village"
-      />
-      <ProjectCard image="looney" title="Looney" />
-      <ProjectCard
-         cardOrder={true}
-         image="screensaver"
-         title="''Screensaver''"
-      />
+   /> -->
+   <div
+      class="relative w-full flex flex-row justify-center items-center gap-16 h-full"
+   >
+      <div class="flex flex-col items-center">
+         <ProjectCard image="boatParking" title="Boat Haven" />
+
+         <BorderSticker
+            topOfset="mt-[-1.5rem]"
+            imageSticker="boatSticker"
+            stickerHeight="h-12"
+         />
+      </div>
+
+      <div class="flex flex-col items-center">
+         <ProjectCard
+            cardOrder={true}
+            image="curiousVillage"
+            title="Curious Village"
+         />
+         <BorderSticker
+            leftOfset="ml-[-15rem]"
+            topOfset="mt-[-2rem]"
+            imageSticker="villageLeft"
+            stickerHeight="h-20"
+         />
+
+         <BorderSticker
+            leftOfset="ml-[15rem]"
+            topOfset="mt-[14rem]"
+            imageSticker="villageRight"
+            stickerHeight="h-20"
+         />
+      </div>
+
+      <div class="flex flex-col items-center">
+         <ProjectCard image="looney" title="Looney" />
+
+         <BorderSticker
+            topOfset="mt-[-1.8rem]"
+            imageSticker="looneyTop"
+            stickerHeight="h-[3.5rem]"
+         />
+      </div>
+
+      <div class="flex flex-col items-center">
+         <ProjectCard
+            cardOrder={true}
+            image="screensaver"
+            title="''Screensaver''"
+         />
+
+         <BorderSticker
+            leftOfset="ml-[14rem]"
+            topOfset="mt-[-2rem]"
+            imageSticker="screensaverLeft"
+            stickerHeight="h-20"
+         />
+
+         <BorderSticker
+            leftOfset="ml-[-14rem]"
+            topOfset="mt-[14rem]"
+            imageSticker="screensaverRight"
+            stickerHeight="h-20"
+         />
+      </div>
    </div>
 </div>
