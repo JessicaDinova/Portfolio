@@ -12,50 +12,6 @@
 </style> -->
 
 <div id="projects" class="relative projects h-screen w-full bg-screen-100">
-   <!-- 
-
-
-
-
-   <!-- <ArrowsDescription
-      leftREM="left-[10rem]"
-      topREM="top-[146rem]"
-      description="First gig"
-      imageArrow="firstGig"
-      imageHeight="h-16"
-   />
-
-   <ArrowsDescription
-      leftREM="left-[36rem]"
-      topREM="top-[172rem]"
-      description="First game"
-      imageArrow="firstGame"
-      imageHeight="h-16"
-      flexType="flex-row-reverse"
-   />
-
-   <ArrowsDescription
-      leftREM="left-[62.5rem]"
-      topREM="top-[149rem]"
-      description="Hand drawn"
-      imageArrow="handDrawn"
-      imageHeight="h-20"
-      flexType="flex-col"
-   />
-
-   <ArrowsDescription
-      leftREM="left-[84rem]"
-      topREM="top-[164rem]"
-      description="Hackathon"
-      imageArrow="hackathon"
-      imageHeight="h-28"
-      flexType="flex-col-reverse"
-   />
-   <img
-      class="absolute z-50 h-40 left-0 top-[173rem]"
-      src="../src/lib/components/img/queen.png"
-      alt="arrow"
-   /> -->
    <div
       class="relative w-full flex flex-row justify-center items-center gap-16 h-full"
    >
@@ -66,6 +22,14 @@
             topOfset="mt-[-1.5rem]"
             imageSticker="boatSticker"
             stickerHeight="h-12"
+         />
+
+         <ArrowsDescription
+            leftREM="ml-[0rem]"
+            topREM="mt-[-7rem]"
+            description="First gig"
+            imageArrow="firstGig"
+            imageHeight="h-16"
          />
       </div>
 
@@ -88,6 +52,15 @@
             imageSticker="villageRight"
             stickerHeight="h-20"
          />
+
+         <ArrowsDescription
+            leftREM="ml-[15rem]"
+            topREM="mt-[18rem]"
+            description="First game"
+            imageArrow="firstGame"
+            imageHeight="h-16"
+            flexType="flex-row-reverse"
+         />
       </div>
 
       <div class="flex flex-col items-center">
@@ -97,6 +70,15 @@
             topOfset="mt-[-1.8rem]"
             imageSticker="looneyTop"
             stickerHeight="h-[3.5rem]"
+         />
+
+         <ArrowsDescription
+            leftREM="ml-[20rem]"
+            topREM="mt-[-5rem]"
+            description="Hand drawn"
+            imageArrow="handDrawn"
+            imageHeight="h-20"
+            flexType="flex-col"
          />
       </div>
 
@@ -120,6 +102,19 @@
             imageSticker="screensaverRight"
             stickerHeight="h-20"
          />
+
+         <ArrowsDescription
+            leftREM="ml-[20rem]"
+            topREM="mt-[11rem]"
+            description="Hackathon"
+            imageArrow="hackathon"
+            imageHeight="h-28"
+            flexType="flex-col-reverse"
+         />
       </div>
+      <img
+      class="absolute z-50 h-56 mt-[45.3rem] mr-[102rem]"
+      src="../src/lib/components/img/queen.png"
+      alt="arrow" />
    </div>
 </div>
