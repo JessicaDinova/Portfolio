@@ -113,7 +113,7 @@
          />
       </div>
       <img
-      class="absolute z-50 h-48 mt-[33.7rem] mr-[81rem]"
+      class="absolute z-50 h-48 mt-[33.5rem] mr-[81rem]"
       src="../src/lib/components/img/queen.png"
       alt="arrow" />
    </div>

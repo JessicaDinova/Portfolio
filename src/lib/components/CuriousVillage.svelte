@@ -27,8 +27,8 @@
         </div>
 
         <div class="text-left">
-            <h1 class="text-5xl mb-3">Curious village</h1>
-            <p class="text-[2rem]">
+            <h1 class="text-5xl mb-3 font-serif">Curious village</h1>
+            <p class="text-[2rem] font-light">
                 My first project in school was to create an<br />educational
                 game concerning data safety<br />for children. Our game was
                 voted the best<br />one from the whole class which was my<br

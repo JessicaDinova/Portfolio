@@ -15,6 +15,10 @@ export default {
           '200': '#737C9D',
         }
     },
+    fontFamily:{
+      hand: ["Gochi Hand"],
+      work: ["Work Sans"],
+    }
   },
   },
   plugins: [],

@@ -15,8 +15,8 @@
             <Project image="boatHavenFull" scale="h-96"/>
         </div>
         <div class="text-right text-white">
-            <h1 class="text-5xl mb-12">Rent a boat parking space</h1>
-            <p class="text-[2rem]">Me and my buddies got an opportunity to<br>create a website for renting boat parking<br>spaces in Zeeland.<br>Together we are currently still developing<br>this website and we are really proud of its<br>functionalities and overall looks.</p>
+            <h1 class="text-5xl mb-12 font-serif">Rent a boat parking space</h1>
+            <p class="text-[2rem] font-light">Me and my buddies got an opportunity to<br><mark>create a website</mark> for renting boat parking<br>spaces in Zeeland.<br>Together we are currently still developing<br>this website and we are really proud of its<br>functionalities and overall looks.</p>
         </div>
         <BorderSticker
             leftOfset="ml-[0rem]"
@@ -26,3 +26,17 @@
             opacity="opacity-100"/>
     </div>
 </div>
+
+
+<style>
+    mark {
+      background: linear-gradient(
+      -100deg,
+      hsla(228, 31%, 72%,.3),
+      hsla(228, 31%, 72%,.7) 95%,
+      hsla(228, 31%, 72%,.1)
+      );
+      border-radius: 1em 0;
+      padding: .3em;
+      }
+    </style>
