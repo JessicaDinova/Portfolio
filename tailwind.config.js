@@ -18,6 +18,7 @@ export default {
     fontFamily:{
       hand: ["Gochi Hand"],
       work: ["Work Sans"],
+      drawn: ["Coming Soon"]
     }
   },
   },
