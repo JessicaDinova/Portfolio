@@ -1,19 +1,18 @@
 <script>
-	import Home from "../lib/components/Home.svelte";
-	import MenuNavigation from "$lib/components/MenuNavigation.svelte";
-	import AboutMe from "$lib/components/AboutMe.svelte";
-	import Skills from "$lib/components/Skills.svelte";
-	import Projects from "$lib/components/Projects.svelte";
+    import Home from "../lib/components/Home.svelte";
+    import AboutMe from "$lib/components/AboutMe.svelte";
+    import Skills from "$lib/components/Skills.svelte";
+    import Projects from "$lib/components/Projects.svelte";
     import BoatHaven from "$lib/components/BoatHaven.svelte";
-	import CuriousVillage from "$lib/components/CuriousVillage.svelte";
-	import Looney from "$lib/components/Looney.svelte";
-	import Screensaver from "$lib/components/Screensaver.svelte";
+    import CuriousVillage from "$lib/components/CuriousVillage.svelte";
+    import Looney from "$lib/components/Looney.svelte";
+    import Screensaver from "$lib/components/Screensaver.svelte";
 
     function scrollIntoView({ target }) {
-        const element = document.querySelector(target.getAttribute('href'));
-        if (!element) return;
-        element.scrollIntoView({
-            behaviour: 'smooth'
+        const el = document.querySelector(target.getAttribute("href"));
+        if (!el) return;
+        el.scrollIntoView({
+            behavior: "smooth",
         });
     }
 </script>
@@ -25,12 +24,27 @@
     <a href="#projects" on:click|preventDefault={scrollIntoView}>Projects</a>
 </nav>
 
-<MenuNavigation />
-<Home />
-<AboutMe />
-<Skills />
-<Projects />
-<BoatHaven/>
-<CuriousVillage/>
-<Looney/>
-<Screensaver/>
+<section id="home">
+    <Home />
+</section>
+<section id="aboutMe">
+    <AboutMe />
+</section>
+<section id="skills">
+    <Skills />
+</section>
+<section id="projects">
+    <Projects/>
+</section>
+<section id="boatHaven">
+    <BoatHaven />
+</section>
+<section id="curiousVillage">
+    <CuriousVillage />
+</section>
+<section id="looney">
+    <Looney />
+</section>
+<section id="screensaver">
+    <Screensaver />
+</section>

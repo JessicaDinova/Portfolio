@@ -11,12 +11,15 @@
    }
 </style> -->
 
-<div id="projects" class="relative projects h-screen w-full bg-screen-100">
-   <div
-      class="relative w-full flex flex-row justify-center items-center gap-16 h-full"
-   >
+<div class="relative projects h-screen w-full bg-screen-100">
+   <div class="relative w-full flex flex-row justify-center items-center gap-16 h-full">
       <div class="flex flex-col items-center">
-         <ProjectCard image="boatParking" title="Boat Haven" />
+         <ProjectCard 
+            image="boatParking"
+            title="Boat Haven"
+            link="#boatHaven"
+            on:click
+            />
 
          <BorderSticker
             topOfset="mt-[-1.5rem]"
@@ -38,6 +41,8 @@
             cardOrder={true}
             image="curiousVillage"
             title="Curious Village"
+            link="#curiousVillage"
+            on:click
          />
          <BorderSticker
             leftOfset="ml-[-15rem]"
@@ -64,7 +69,13 @@
       </div>
 
       <div class="flex flex-col items-center">
-         <ProjectCard image="looney" title="Looney" />
+         <ProjectCard
+            image="looney"
+            title="Looney"
+            link="#looney"
+            on:click
+            />
+            
 
          <BorderSticker
             topOfset="mt-[-1.8rem]"
@@ -87,6 +98,8 @@
             cardOrder={true}
             image="screensaver"
             title="''Screensaver''"
+            link="#screensaver"
+            on:click
          />
 
          <BorderSticker

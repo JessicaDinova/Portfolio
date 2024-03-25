@@ -2,7 +2,7 @@
 
 </script>
 
-<div id="aboutMe" class="h-screen w-full bg-cream-100 flex flex-row gap-44 justify-center items-center">
+<div class="h-screen w-full bg-cream-100 flex flex-row gap-44 justify-center items-center">
     <div class="w-[25rem]">
         hoi
     </div>

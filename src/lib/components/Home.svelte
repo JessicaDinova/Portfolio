@@ -2,10 +2,7 @@
     import Stars from "./Stars.svelte";
 </script>
 
-<div
-    id="home"
-    class="relative h-screen w-full bg-cream-100 flex justify-center items-center"
->
+<div class="relative h-screen w-full bg-cream-100 flex justify-center items-center">
     <div class="relative flex flex-col w-full items-center">
         <h1 class="text-left text-7xl font-light">Hello, I am<span class="font-drawn text-6xl text-lavander-100 ml-10 font-extrabold">Jessica</span></h1>
         <p class="text-right text-4xl font-light">
