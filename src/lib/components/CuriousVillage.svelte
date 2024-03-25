@@ -1,11 +1,19 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
     import Project from "./Project.svelte";
+    export let y;
 </script>
+
+<style>
+    .projectsIn {
+       background-color: #F4F0ED;
+       transition: background-color 380ms ease-in;
+    }
+ </style>
 
 <div
     id="curiousVillage"
-    class="relative h-screen w-full bg-cream-100 flex justify-center items-center"
+    class="relative h-screen w-full bg-screen-100 flex justify-center items-center {y > 2910 ? 'projectsIn' : ''}"
 >
     <div
         class="flex flex-row-reverse w-full justify-center items-center gap-48 mt-3"

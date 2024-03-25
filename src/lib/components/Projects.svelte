@@ -2,16 +2,17 @@
    import ProjectCard from "./ProjectCard.svelte";
    import ArrowsDescription from "./ArrowsDescription.svelte";
    import BorderSticker from "./BorderSticker.svelte";
+   export let y;
 </script>
 
-<!-- <style>
-   .projects:hover {
+<style>
+   .projectsIn {
       background-color: #313131;
-      -webkit-transition: background-color 180ms ease-in;
+      transition: background-color 380ms ease-in;
    }
-</style> -->
+</style>
 
-<div class="relative projects h-screen w-full bg-screen-100">
+<div class="relative h-screen w-full bg-cream-100 {y > 1480 ? 'projectsIn' : ''}">
    <div class="relative w-full flex flex-row justify-center items-center gap-16 h-full">
       <div class="flex flex-col items-center">
          <ProjectCard 

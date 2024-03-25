@@ -15,36 +15,53 @@
             behavior: "smooth",
         });
     }
+
+    let y;
 </script>
 
-<nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100">
+<!-- <style>
+    .colorIn {
+       background-color: #F4F0ED;
+       transition: background-color 380ms ease-in;
+    }
+    .colorOut {
+       background-color: #313131;
+       transition: background-color 380ms ease-in;
+    }
+ </style> -->
+
+
+<nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100 {y >2130 ? 'colorOut text-white' : ''}">
     <a href="#home" on:click|preventDefault={scrollIntoView}>Home</a>
     <a href="#aboutMe" on:click|preventDefault={scrollIntoView}>About Me</a>
     <a href="#skills" on:click|preventDefault={scrollIntoView}>My Skills</a>
     <a href="#projects" on:click|preventDefault={scrollIntoView}>Projects</a>
 </nav>
 
-<section id="home">
-    <Home />
-</section>
-<section id="aboutMe">
-    <AboutMe />
-</section>
-<section id="skills">
-    <Skills />
-</section>
-<section id="projects">
-    <Projects/>
-</section>
-<section id="boatHaven">
-    <BoatHaven />
-</section>
-<section id="curiousVillage">
-    <CuriousVillage />
-</section>
-<section id="looney">
-    <Looney />
-</section>
-<section id="screensaver">
-    <Screensaver />
-</section>
+    <section id="home">
+        <Home />
+    </section>
+    <section id="aboutMe">
+        <AboutMe />
+    </section>
+    <section id="skills">
+        <Skills y={y}/>
+    </section>
+    <section id="projects">
+        <Projects y={y}/>
+    </section>
+    <section id="boatHaven">
+        <BoatHaven y={y}/>
+    </section>
+    <section id="curiousVillage">
+        <CuriousVillage y={y}/>
+    </section>
+    <section id="looney">
+        <Looney y={y}/>
+    </section>
+    <section id="screensaver">
+        <Screensaver y={y}/>
+    </section>
+
+<svelte:window bind:scrollY={y}/>
+<!-- <svelte:window on:scroll={console.log(y)} bind:scrollY={y}/> -->

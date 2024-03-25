@@ -1,9 +1,17 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
     import Project from "./Project.svelte";
+    export let y;
 </script>
 
-<div id="boatHaven" class="relative h-screen w-full bg-screen-100 flex justify-center items-center">
+<style>
+    .projectsIn {
+       background-color: #313131;
+       transition: background-color 380ms ease-in;
+    }
+ </style>
+
+<div id="boatHaven" class="relative h-screen w-full bg-cream-100 flex justify-center items-center {y < 3590 ? 'projectsIn' : ''}">
     <div class="flex flex-row w-full justify-center items-center gap-9 mt-3">
         <div>
             <BorderSticker
@@ -26,17 +34,3 @@
             opacity="opacity-100"/>
     </div>
 </div>
-
-
-<style>
-    mark {
-      background: linear-gradient(
-      -100deg,
-      hsla(228, 31%, 72%,.3),
-      hsla(228, 31%, 72%,.7) 95%,
-      hsla(228, 31%, 72%,.1)
-      );
-      border-radius: 1em 0;
-      padding: .3em;
-      }
-    </style>
