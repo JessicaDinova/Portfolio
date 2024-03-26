@@ -19,7 +19,7 @@
     let y;
 </script>
 
-<!-- <style>
+<style>
     .colorIn {
        background-color: #F4F0ED;
        transition: background-color 380ms ease-in;
@@ -28,10 +28,10 @@
        background-color: #313131;
        transition: background-color 380ms ease-in;
     }
- </style> -->
+ </style>
 
 
-<nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100 {y >2130 ? 'colorOut text-white' : ''}">
+<nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
     <a href="#home" on:click|preventDefault={scrollIntoView}>Home</a>
     <a href="#aboutMe" on:click|preventDefault={scrollIntoView}>About Me</a>
     <a href="#skills" on:click|preventDefault={scrollIntoView}>My Skills</a>
