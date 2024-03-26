@@ -37,11 +37,11 @@
         <div class="text-left">
             <h1 class="text-5xl mb-3 font-serif">Curious village</h1>
             <p class="text-[2rem] font-light">
-                My first project in school was to create an<br />educational
-                game concerning data safety<br />for children. Our game was
-                voted the best<br />one from the whole class which was my<br
-                />first little victory.<br />During this project I learned the
-                basics of<br />working agile.
+                My first project in school was to create an<br /><span class="highlight">educational
+                game</span> concerning data safety<br />for children. Our game was
+                voted <span class="highlight">the best</span><br />one from the whole class which was my<br
+                />first little <span class="highlight">victory.</span><br />During this project I learned the
+                basics of<br />working <span class="highlight">agile</span>.
             </p>
         </div>
 

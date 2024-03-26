@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.highlight {
+   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=cbcedd);
+   padding: 0rem 1rem 0.3rem;
+}
+
+.highlightDark {
+   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=525667);
+   padding: 0rem 1rem 0.3rem;
+}

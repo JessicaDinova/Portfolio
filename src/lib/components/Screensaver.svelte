@@ -14,7 +14,15 @@
     <div class="flex w-full justify-start pl-32 mt-20">
         <div class="text-left text-white">
             <h1 class="text-5xl mb-10 font-serif">"Screensaver"</h1>
-            <p class="text-[1.8rem] font-light">My first hackathon was fun and hectic at the<br>same time. Our assigment was to create a<br>screensaver for the biggest screen in Zeeland<br>that belongs to JRCZ. We decided to make a<br>rotating globe that would expand by clapping<br>your hands. We had to quickly learn how to use<br>Blender and Unity to pull all of this off. In the end<br>we were sleep depried but we enjoyed every<br>second of it.</p>
+            <p class="text-[1.8rem] font-light">
+                My first <span class="highlightDark">hackathon</span> was fun and hectic at the<br>
+                same time. Our assigment was to create a<br>
+                screensaver for the <span class="highlightDark">biggest screen</span> in Zeeland<br>
+                that belongs to <span class="highlightDark">JRCZ.</span> We decided to make a<br>
+                rotating globe that would expand by <span class="highlightDark">clapping</span><br>
+                your hands. We had to quickly learn how to use<br>
+                <span class="highlightDark">Blender and Unity</span> to pull all of this off. In the end<br>
+                we were sleep depried but we enjoyed every<br>second of it.</p>
         </div>
         <BorderSticker
             leftOfset="ml-[35rem]"

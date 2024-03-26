@@ -4,14 +4,14 @@
 
 <div class="relative h-screen w-full bg-cream-100 flex justify-center items-center">
     <div class="relative flex flex-col w-full items-center">
-        <h1 class="text-left text-7xl font-light">Hello, I am<span class="font-drawn text-6xl text-lavander-100 ml-10 font-extrabold">Jessica</span></h1>
+        <h1 class="text-left text-7xl font-light">Hello, I am<span class="font-drawn text-6xl text-lavander-100 pl-8 pr-4 font-black" style="text-shadow: 0px 1.5px, 1.5px 0px, 1.5px 1.5px">Jessica</span></h1>
         <p class="text-right text-4xl font-light">
             Wannabe graphic designer and web<br />developer
         </p>
         <div>
             <Stars
                 leftOfset="ml-[-40rem]"
-                topOfset="mt-[-25rem]"
+                topOfset="mt-[-23rem]"
                 starNumber="One"
                 starHeight="h-[7rem]"
             />

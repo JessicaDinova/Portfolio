@@ -32,10 +32,10 @@
 
 
 <nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
-    <a href="#home" on:click|preventDefault={scrollIntoView}>Home</a>
-    <a href="#aboutMe" on:click|preventDefault={scrollIntoView}>About Me</a>
-    <a href="#skills" on:click|preventDefault={scrollIntoView}>My Skills</a>
-    <a href="#projects" on:click|preventDefault={scrollIntoView}>Projects</a>
+    <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < 700 ? 'highlight' : ''}">Home</a>
+    <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y > 699 && y < 1404) ? 'highlight' : ''}">About Me</a>
+    <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y > 1403 && y < 2124) ? 'highlight' : ''}">My Skills</a>
+    <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < 2123) ? '' : ((y > 2108 && y < 3590 )|| y > 5050 ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
     <section id="home">
@@ -64,4 +64,3 @@
     </section>
 
 <svelte:window bind:scrollY={y}/>
-<!-- <svelte:window on:scroll={console.log(y)} bind:scrollY={y}/> -->
