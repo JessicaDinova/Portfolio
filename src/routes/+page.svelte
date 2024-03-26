@@ -63,4 +63,4 @@
         <Screensaver y={y}/>
     </section>
 
-<svelte:window bind:scrollY={y}/>
+<svelte:window on:scroll={console.log(y)} bind:scrollY={y}/>
