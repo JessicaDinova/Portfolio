@@ -12,7 +12,7 @@
    }
 </style>
 
-<div class="relative h-screen w-full bg-cream-100 {y > 1480 ? 'projectsIn' : ''}">
+<div class="relative h-screen w-full bg-screen-100">
    <div class="relative w-full flex flex-row justify-center items-center gap-16 h-full">
       <div class="flex flex-col items-center">
          <ProjectCard 
@@ -39,7 +39,6 @@
 
       <div class="flex flex-col items-center">
          <ProjectCard
-            cardOrder={true}
             image="curiousVillage"
             title="Curious Village"
             link="#curiousVillage"
@@ -61,7 +60,7 @@
 
          <ArrowsDescription
             leftREM="ml-[15rem]"
-            topREM="mt-[18rem]"
+            topREM="mt-[19rem]"
             description="First game"
             imageArrow="firstGame"
             imageHeight="h-16"
@@ -96,7 +95,6 @@
 
       <div class="flex flex-col items-center">
          <ProjectCard
-            cardOrder={true}
             image="screensaver"
             title="''Screensaver''"
             link="#screensaver"

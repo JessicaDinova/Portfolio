@@ -4,13 +4,7 @@
     export let y;
 </script>
 
-<div
-    id="boatHaven"
-    class="relative h-screen w-full bg-cream-100 flex justify-center items-center {y <
-    3590
-        ? 'projectsIn'
-        : ''}"
->
+<div id="boatHaven" class="relative h-screen w-full bg-screen-100 flex justify-center items-center">
     <div class="flex flex-row w-full justify-center items-center gap-9 mt-3">
         <div>
             <BorderSticker
@@ -23,7 +17,7 @@
         </div>
         <div class="text-right text-white">
             <h1 class="text-5xl mb-12 font-serif">Rent a boat parking space</h1>
-            <p class="text-[2rem] font-light">
+            <p class="text-[1.8rem] font-light">
                 Me and my buddies got an opportunity to<br/>
                 <span class="highlightDark">create a website</span>
                 for renting boat parking<br/>spaces in Zeeland.<br/>Together

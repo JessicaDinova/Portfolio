@@ -10,11 +10,11 @@
     }
  </style>
 
-<div id="screensaver" class="relative h-screen w-full bg-cream-100 flex justify-center items-center {y > 4410 ? 'projectsIn' : ''}">
+<div id="screensaver" class="relative h-screen w-full bg-screen-100 flex justify-center items-center">
     <div class="flex w-full justify-start pl-32 mt-20">
         <div class="text-left text-white">
             <h1 class="text-5xl mb-10 font-serif">"Screensaver"</h1>
-            <p class="text-[1.8rem] font-light">
+            <p class="text-[1.7rem] font-light">
                 My first <span class="highlightDark">hackathon</span> was fun and hectic at the<br>
                 same time. Our assigment was to create a<br>
                 screensaver for the <span class="highlightDark">biggest screen</span> in Zeeland<br>
@@ -25,14 +25,14 @@
                 we were sleep depried but we enjoyed every<br>second of it.</p>
         </div>
         <BorderSticker
-            leftOfset="ml-[35rem]"
+            leftOfset="ml-[40rem]"
             topOfset="mt-[-4rem]"
             imageSticker="coffeeDoodle"
             stickerHeight="h-32"
             opacity="opacity-100"/>
 
             <BorderSticker
-            leftOfset="ml-[13rem]"
+            leftOfset="ml-[20rem]"
             topOfset="mt-[27.5rem]"
             imageSticker="energyDoodle"
             stickerHeight="h-24"

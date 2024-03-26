@@ -11,7 +11,7 @@
     }
  </style>
 
-<div id="looney" class="relative h-screen w-full bg-screen-100 flex justify-center items-center {y < 5050 ? 'projectsIn' : ''}">
+<div id="looney" class="relative h-screen w-full bg-cream-100 flex justify-center items-center">
     <div class="flex flex-row w-full justify-center items-center gap-72 mt-16">
         <div class="ml-40">
             <BorderSticker
@@ -30,7 +30,7 @@
         </div>
         <div class="text-right">
             <h1 class="text-6xl mb-12 font-serif">Looney</h1>
-            <p class="text-[1.7rem] font-light">
+            <p class="text-[1.6rem] font-light">
                 This application allows users to keep track of<br>their <span class="highlight">habits,
                 emotions</span> and deepest <span class="highlight">thoughts</span><br>that connect to their emotions. 
                 We also allowed<br>them to share these thoughts on <span class="highlight">map</span> if they<br>

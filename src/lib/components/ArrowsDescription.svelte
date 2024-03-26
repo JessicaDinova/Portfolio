@@ -8,7 +8,7 @@
 </script>
 
 <div class="absolute z-30 {leftREM} {topREM} flex {flexType} justify-center items-center gap-2">
-    <p class="text-4xl text-lavander-100 font-drawn font-extrabold">{description}</p>
+    <p class="text-3xl text-lavander-100 font-drawn font-extrabold">{description}</p>
     <img 
     src="../src/lib/components/img/{imageArrow}.png"    
     alt="arrow"

@@ -13,7 +13,7 @@
 
 <div
     id="curiousVillage"
-    class="relative h-screen w-full bg-screen-100 flex justify-center items-center {y > 2910 ? 'projectsIn' : ''}"
+    class="relative h-screen w-full bg-cream-100 flex justify-center items-center"
 >
     <div
         class="flex flex-row-reverse w-full justify-center items-center gap-48 mt-3"
@@ -36,7 +36,7 @@
 
         <div class="text-left">
             <h1 class="text-5xl mb-3 font-serif">Curious village</h1>
-            <p class="text-[2rem] font-light">
+            <p class="text-[1.8rem] font-light">
                 My first project in school was to create an<br /><span class="highlight">educational
                 game</span> concerning data safety<br />for children. Our game was
                 voted <span class="highlight">the best</span><br />one from the whole class which was my<br

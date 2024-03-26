@@ -31,36 +31,37 @@
  </style>
 
 
-<nav class="w-full flex flex-row gap-72 items-center justify-center text-center fixed z-[90] text-3xl py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
+<nav class="w-full flex flex-row gap-56 items-center justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
     <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < 700 ? 'highlight' : ''}">Home</a>
     <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y > 699 && y < 1404) ? 'highlight' : ''}">About Me</a>
     <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y > 1403 && y < 2124) ? 'highlight' : ''}">My Skills</a>
     <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < 2123) ? '' : ((y > 2108 && y < 3590 )|| y > 5050 ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
-    <section id="home">
+<div class="snap-y snap-mandatory overflow-y-auto">
+    <section class="snap-start" id="home">
         <Home />
     </section>
-    <section id="aboutMe">
+    <section class="snap-start" id="aboutMe">
         <AboutMe />
     </section>
-    <section id="skills">
+    <section class="snap-start" id="skills">
         <Skills y={y}/>
     </section>
-    <section id="projects">
+    <section class="snap-start" id="projects">
         <Projects y={y}/>
     </section>
-    <section id="boatHaven">
+    <section class="snap-start" id="boatHaven">
         <BoatHaven y={y}/>
     </section>
-    <section id="curiousVillage">
+    <section class="snap-start" id="curiousVillage">
         <CuriousVillage y={y}/>
     </section>
-    <section id="looney">
+    <section class="snap-start" id="looney">
         <Looney y={y}/>
     </section>
-    <section id="screensaver">
+    <section class="snap-start" id="screensaver">
         <Screensaver y={y}/>
     </section>
-
-<svelte:window on:scroll={console.log(y)} bind:scrollY={y}/>
+</div>
+<svelte:window bind:scrollY={y}/>
