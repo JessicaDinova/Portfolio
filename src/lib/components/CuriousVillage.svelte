@@ -1,15 +1,7 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
     import Project from "./Project.svelte";
-    export let y;
 </script>
-
-<style>
-    .projectsIn {
-       background-color: #F4F0ED;
-       transition: background-color 380ms ease-in;
-    }
- </style>
 
 <div
     id="curiousVillage"
@@ -47,7 +39,7 @@
 
         <BorderSticker
             leftOfset="ml-[7rem]"
-            topOfset="mt-[-28rem]"
+            topOfset="mt-[-24rem]"
             imageSticker="cupDoodle"
             stickerHeight="h-40"
             opacity="opacity-100"

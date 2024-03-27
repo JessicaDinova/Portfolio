@@ -2,15 +2,7 @@
    import ProjectCard from "./ProjectCard.svelte";
    import ArrowsDescription from "./ArrowsDescription.svelte";
    import BorderSticker from "./BorderSticker.svelte";
-   export let y;
 </script>
-
-<style>
-   .projectsIn {
-      background-color: #313131;
-      transition: background-color 380ms ease-in;
-   }
-</style>
 
 <div class="relative h-screen w-full bg-screen-100">
    <div class="relative w-full flex flex-row justify-center items-center gap-16 h-full">
@@ -19,11 +11,13 @@
             image="boatParking"
             title="Boat Haven"
             link="#boatHaven"
+            rotation="rotate-[10deg]"
             on:click
             />
 
          <BorderSticker
             topOfset="mt-[-1.5rem]"
+            leftOfset="ml-[2rem]"
             imageSticker="boatSticker"
             stickerHeight="h-12"
          />
@@ -73,12 +67,14 @@
             image="looney"
             title="Looney"
             link="#looney"
+            rotation="rotate-[-8deg]"
             on:click
             />
             
 
          <BorderSticker
             topOfset="mt-[-1.8rem]"
+            leftOfset="ml-[-2rem]"
             imageSticker="looneyTop"
             stickerHeight="h-[3.5rem]"
          />
@@ -98,21 +94,22 @@
             image="screensaver"
             title="''Screensaver''"
             link="#screensaver"
+            rotation="rotate-[15deg]"
             on:click
          />
 
          <BorderSticker
-            leftOfset="ml-[14rem]"
-            topOfset="mt-[-2rem]"
+            leftOfset="ml-[18rem]"
+            topOfset="mt-[0rem]"
             imageSticker="screensaverLeft"
             stickerHeight="h-20"
          />
 
          <BorderSticker
-            leftOfset="ml-[-14rem]"
-            topOfset="mt-[14rem]"
+            leftOfset="ml-[-17.4rem]"
+            topOfset="mt-[12rem]"
             imageSticker="screensaverRight"
-            stickerHeight="h-20"
+            stickerHeight="h-[4.5rem]"
          />
 
          <ArrowsDescription

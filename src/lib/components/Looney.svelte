@@ -1,15 +1,7 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
     import Project from "./Project.svelte";
-    export let y;
 </script>
-
-<style>
-    .projectsIn {
-       background-color: #F4F0ED;
-       transition: background-color 380ms ease-in;
-    }
- </style>
 
 <div id="looney" class="relative h-screen w-full bg-cream-100 flex justify-center items-center">
     <div class="flex flex-row w-full justify-center items-center gap-72 mt-16">

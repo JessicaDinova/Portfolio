@@ -1,13 +1,6 @@
 <script>
-   export let y;
+   
 </script>
-
-<style>
-   .projectsIn {
-      background-color: #F4F0ED;
-      transition: background-color 380ms ease-in;
-   }
-</style>
 
 <div class="h-screen w-full bg-cream-100 flex items-center justify-center "> 
    <div class="relative flex items-center justify-center h-full w-full">

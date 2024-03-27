@@ -1,7 +1,6 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
     import Project from "./Project.svelte";
-    export let y;
 </script>
 
 <div id="boatHaven" class="relative h-screen w-full bg-screen-100 flex justify-center items-center">
@@ -35,10 +34,3 @@
         />
     </div>
 </div>
-
-<style>
-    .projectsIn {
-        background-color: #313131;
-        transition: background-color 380ms ease-in;
-    }
-</style>

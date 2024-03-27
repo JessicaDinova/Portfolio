@@ -46,22 +46,22 @@
         <AboutMe />
     </section>
     <section class="snap-start" id="skills">
-        <Skills y={y}/>
+        <Skills />
     </section>
     <section class="snap-start" id="projects">
-        <Projects y={y}/>
+        <Projects />
     </section>
     <section class="snap-start" id="boatHaven">
-        <BoatHaven y={y}/>
+        <BoatHaven />
     </section>
     <section class="snap-start" id="curiousVillage">
-        <CuriousVillage y={y}/>
+        <CuriousVillage />
     </section>
     <section class="snap-start" id="looney">
-        <Looney y={y}/>
+        <Looney />
     </section>
     <section class="snap-start" id="screensaver">
-        <Screensaver y={y}/>
+        <Screensaver />
     </section>
 </div>
 <svelte:window bind:scrollY={y}/>

@@ -1,14 +1,6 @@
 <script>
     import BorderSticker from "./BorderSticker.svelte";
-    export let y;
 </script>
-
-<style>
-    .projectsIn {
-       background-color: #313131;
-       transition: background-color 380ms ease-in;
-    }
- </style>
 
 <div id="screensaver" class="relative h-screen w-full bg-screen-100 flex justify-center items-center">
     <div class="flex w-full justify-start pl-32 mt-20">
