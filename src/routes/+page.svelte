@@ -31,36 +31,36 @@
  </style>
 
 
-<nav class="w-full flex flex-row gap-56 items-center justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
+<nav class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
     <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < 700 ? 'highlight' : ''}">Home</a>
     <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y > 699 && y < 1404) ? 'highlight' : ''}">About Me</a>
     <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y > 1403 && y < 2124) ? 'highlight' : ''}">My Skills</a>
     <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < 2123) ? '' : ((y > 2108 && y < 3590 )|| y > 5050 ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
-<div class="snap-y snap-mandatory overflow-y-auto h-full">
-    <div class="snap-center h-auto" id="home">
+<div class="lg:overflow-y-auto overflow-hidden h-full flex-col items-center">
+    <div class="h-screen" id="home">
         <Home />
     </div>
-    <div class="snap-center h-auto" id="aboutMe">
+    <div class="h-screen" id="aboutMe">
         <AboutMe />
     </div>
-    <div class="snap-center h-auto" id="skills">
+    <div class="h-screen" id="skills">
         <Skills />
     </div>
-    <div class="snap-center h-auto" id="projects">
+    <div class="h-screen" id="projects">
         <Projects />
     </div>
-    <div class="snap-center h-auto" id="boatHaven">
+    <div class="h-screen" id="boatHaven">
         <BoatHaven />
     </div>
-    <div class="snap-center h-auto" id="curiousVillage">
+    <div class="h-screen" id="curiousVillage">
         <CuriousVillage />
     </div>
-    <div class="snap-center h-auto" id="looney">
+    <div class="h-screen" id="looney">
         <Looney />
     </div>
-    <div class="snap-center h-auto" id="screensaver">
+    <div class="h-screen" id="screensaver">
         <Screensaver />
     </div>
 </div>
