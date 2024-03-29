@@ -38,14 +38,14 @@
             />
 
             <Stars
-                leftOfset="lg:ml-[5rem] ml-[]"
+                leftOfset="lg:ml-[5rem] ml-[0rem]"
                 topOfset="mt-[-14rem]"
                 starNumber="Four"
                 starHeight="h-[4rem]"
             />
 
             <Stars
-                leftOfset="lg:ml-[26rem] ml-[3rem]"
+                leftOfset="lg:ml-[26rem] ml-[4.5rem]"
                 topOfset="lg:mt-[-12.5rem] mt-[5rem]"
                 starNumber="One"
                 starHeight="h-[6rem]"

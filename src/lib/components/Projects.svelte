@@ -4,8 +4,8 @@
    import BorderSticker from "./BorderSticker.svelte";
 </script>
 
-<div class="relative h-screen w-full bg-screen-100">
-   <div class="relative w-full flex flex-row justify-center items-center gap-16 h-full">
+<div class="relative lg:h-screen h-[250vh] w-full bg-screen-100 lg:p-0 py-14">
+   <div class="relative lg:h-screen h-[250vh] w-full flex lg:flex-row flex-col justify-center items-center lg:gap-16 gap-36 lg:overflow-hidden ">
       <div class="flex flex-col items-center">
          <ProjectCard 
             image="boatParking"
@@ -31,7 +31,7 @@
          />
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center lg:p-0 pb-16">
          <ProjectCard
             image="curiousVillage"
             title="Curious Village"
@@ -53,7 +53,7 @@
          />
 
          <ArrowsDescription
-            leftREM="ml-[15rem]"
+            leftREM="lg:ml-[15rem] ml-[0]"
             topREM="mt-[19rem]"
             description="First game"
             imageArrow="firstGame"
@@ -62,12 +62,12 @@
          />
       </div>
 
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center lg:m-0 mr-16">
          <ProjectCard
             image="looney"
             title="Looney"
             link="#looney"
-            rotation="rotate-[-8deg]"
+            rotation="lg:rotate-[-8deg] rotate-[-15deg]"
             on:click
             />
             
@@ -80,8 +80,8 @@
          />
 
          <ArrowsDescription
-            leftREM="ml-[20rem]"
-            topREM="mt-[-5rem]"
+            leftREM="lg:ml-[20rem] ml-[23rem]"
+            topREM="lg:mt-[-5rem] mt-[-1rem]"
             description="Hand drawn"
             imageArrow="handDrawn"
             imageHeight="h-20"
@@ -113,8 +113,8 @@
          />
 
          <ArrowsDescription
-            leftREM="ml-[19rem]"
-            topREM="mt-[13rem]"
+            leftREM="lg:ml-[19rem] ml-[15rem]"
+            topREM="lg:mt-[13rem] mt-[15rem]"
             description="Hackathon"
             imageArrow="hackathon"
             imageHeight="h-28"
@@ -122,7 +122,7 @@
          />
       </div>
       <img
-      class="absolute z-50 h-48 mt-[33.5rem] mr-[81rem]"
+      class="absolute z-50 h-48 mt-[33.5rem] mr-[81rem] lg:block hidden"
       src="doodles/queen.png"
       alt="arrow" />
    </div>
