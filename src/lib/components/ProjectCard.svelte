@@ -17,7 +17,7 @@
 <a href="{link}" on:click|preventDefault={scrollIntoView}>
 <div class="{rotation} relative w-64 h-[17rem] bg-cream-100 flex flex-col-reverse gap-5 px-[0.6rem] pb-3 items-center justify-center hover:scale-105 duration-100 hover:cursor-pointer">
     <div class="text-center">
-        <h1 class="text-3xl font-light">{title}</h1>
+        <h1 class="text-3xl font-normal font-drawn" style="text-shadow: 0px 1px, 1px 0px, 1px 1px">{title}</h1>
     </div>
     <div>
         <img

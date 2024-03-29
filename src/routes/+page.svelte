@@ -38,30 +38,30 @@
     <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < 2123) ? '' : ((y > 2108 && y < 3590 )|| y > 5050 ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
-<div class="snap-y snap-mandatory overflow-y-auto">
-    <section class="snap-start" id="home">
+<div class="snap-y snap-mandatory overflow-y-auto h-full">
+    <div class="snap-center h-auto" id="home">
         <Home />
-    </section>
-    <section class="snap-start" id="aboutMe">
+    </div>
+    <div class="snap-center h-auto" id="aboutMe">
         <AboutMe />
-    </section>
-    <section class="snap-start" id="skills">
+    </div>
+    <div class="snap-center h-auto" id="skills">
         <Skills />
-    </section>
-    <section class="snap-start" id="projects">
+    </div>
+    <div class="snap-center h-auto" id="projects">
         <Projects />
-    </section>
-    <section class="snap-start" id="boatHaven">
+    </div>
+    <div class="snap-center h-auto" id="boatHaven">
         <BoatHaven />
-    </section>
-    <section class="snap-start" id="curiousVillage">
+    </div>
+    <div class="snap-center h-auto" id="curiousVillage">
         <CuriousVillage />
-    </section>
-    <section class="snap-start" id="looney">
+    </div>
+    <div class="snap-center h-auto" id="looney">
         <Looney />
-    </section>
-    <section class="snap-start" id="screensaver">
+    </div>
+    <div class="snap-center h-auto" id="screensaver">
         <Screensaver />
-    </section>
+    </div>
 </div>
 <svelte:window bind:scrollY={y}/>

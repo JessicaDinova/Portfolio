@@ -113,8 +113,8 @@
          />
 
          <ArrowsDescription
-            leftREM="ml-[20rem]"
-            topREM="mt-[11rem]"
+            leftREM="ml-[19rem]"
+            topREM="mt-[13rem]"
             description="Hackathon"
             imageArrow="hackathon"
             imageHeight="h-28"
