@@ -6,5 +6,5 @@
 </script>
 
 <div class="absolute z-20 {leftOfset} {topOfset}">
-    <img class="{starHeight}" src="../src/lib/components/img/star{starNumber}.png" alt="star">
+    <img class="{starHeight}" src="stars/star{starNumber}.png" alt="star">
 </div>

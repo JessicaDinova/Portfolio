@@ -6,7 +6,7 @@
 <div class="relative z-20">
     <img
     class="{scale}"
-    src="../src/lib/components/img/{image}.png"
+    src="projectImages/{image}.png"
     alt="project"
     />
 </div>

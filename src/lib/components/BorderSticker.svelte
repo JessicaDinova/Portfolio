@@ -8,7 +8,7 @@
 
 <div class="absolute z-40 {leftOfset} {topOfset} w-auto">
     <img 
-    src="../src/lib/components/img/{imageSticker}.png"    
+    src="stickers/{imageSticker}.png"    
     alt="sticker"
     class="{stickerHeight} {opacity}"
     >

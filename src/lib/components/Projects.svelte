@@ -123,7 +123,7 @@
       </div>
       <img
       class="absolute z-50 h-48 mt-[33.5rem] mr-[81rem]"
-      src="../src/lib/components/img/queen.png"
+      src="doodles/queen.png"
       alt="arrow" />
    </div>
 </div>

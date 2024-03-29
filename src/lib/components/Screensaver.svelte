@@ -31,6 +31,6 @@
             opacity="opacity-100"/>
     </div>
         <div class="absolute mt-[7.7rem] ml-[56.8rem]">
-            <img class="h-[38rem]" src="../src/lib/components/img/screensaverFull.png" alt="Project">
+            <img class="h-[38rem]" src="projectImages/screensaverFull.png" alt="Project">
         </div>
 </div>

@@ -21,7 +21,7 @@
     </div>
     <div>
         <img
-        src="../src/lib/components/img/{image}.png"
+        src="projectImages/{image}.png"
         alt="project"
         class="rotate-0"/>
     </div>
