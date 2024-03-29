@@ -4,11 +4,11 @@
 
 
 .highlight {
-   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=cbcedd);
+   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=cbcedd) no-repeat;
    padding: 0rem 1rem 0.3rem;
 }
 
 .highlightDark {
-   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=525667);
+   background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=525667) no-repeat;
    padding: 0rem 1rem 0.3rem;
 }
