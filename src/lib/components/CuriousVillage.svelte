@@ -3,52 +3,47 @@
     import Project from "./Project.svelte";
 </script>
 
-<div
-    id="curiousVillage"
-    class="relative h-screen w-full bg-cream-100 flex justify-center items-center"
->
-    <div
-        class="flex flex-row-reverse w-full justify-center items-center gap-48 mt-3"
-    >
+<div id="curiousVillage" class="relative h-screen w-full bg-cream-100 flex justify-center items-center">
+    <div class="flex lg:flex-row-reverse flex-col-reverse w-full justify-center items-center lg:gap-48 gap-9 lg:mt-3">
         <div>
             <BorderSticker
-                leftOfset="ml-[-2.5rem]"
-                topOfset="mt-[-2.5rem]"
+                leftOfset="lg:ml-[-2.5rem] ml-[-1rem]"
+                topOfset="lg:mt-[-2.5rem] mt-[-1rem]"
                 imageSticker="villageLeft"
-                stickerHeight="h-24"
+                stickerHeight="lg:h-24 h-20"
             />
             <BorderSticker
-                leftOfset="ml-[26rem]"
-                topOfset="mt-[21rem]"
+                leftOfset="lg:ml-[26rem] ml-[19.3rem]"
+                topOfset="lg:mt-[21rem] mt-[16rem]"
                 imageSticker="villageRight"
-                stickerHeight="h-24"
+                stickerHeight="lg:h-24 h-20"
             />
-            <Project image="curiousVillageFull" scale="h-96" />
+            <Project image="curiousVillageFull" scale="lg:h-96 h-[19rem]" />
         </div>
 
-        <div class="text-left">
-            <h1 class="text-5xl mb-3 font-serif">Curious village</h1>
-            <p class="text-[1.8rem] font-light">
-                My first project in school was to create an<br /><span class="highlight">educational
-                game</span> concerning data safety<br />for children. Our game was
-                voted <span class="highlight">the best</span><br />one from the whole class which was my<br
-                />first little <span class="highlight">victory.</span><br />During this project I learned the
-                basics of<br />working <span class="highlight">agile</span>.
+        <div class="lg:text-left text-justify">
+            <h1 class="lg:text-4xl text-2xl mb-4 font-serif uppercase lg:text-left text-center">Curious village</h1>
+            <p class="lg:text-[1.8rem] text-[1.3rem] font-light lg:p-0 px-10">
+                My first project in school was to create an<br class="lg:block hidden"><span class="highlight">educational
+                game</span> concerning data safety <br class="lg:block hidden">for children. Our game was
+                voted <span class="highlight">the best</span><br class="lg:block hidden">one from the whole class which was my<br class="lg:block hidden">
+                first little <span class="highlight">victory.</span><br class="lg:block hidden">During this project I learned the
+                basics of <br class="lg:block hidden">working <span class="highlight">agile</span>.
             </p>
         </div>
 
         <BorderSticker
-            leftOfset="ml-[7rem]"
-            topOfset="mt-[-24rem]"
+            leftOfset="lg:ml-[7rem] ml-[-18rem]"
+            topOfset="lg:mt-[-24rem] mt-[-42rem]"
             imageSticker="cupDoodle"
-            stickerHeight="h-40"
+            stickerHeight="lg:h-40 h-16"
             opacity="opacity-100"
         />
         <BorderSticker
-            leftOfset="ml-[-30rem]"
-            topOfset="mt-[31rem]"
+            leftOfset="lg:ml-[-30rem] ml-[12rem]"
+            topOfset="lg:mt-[31rem] mt-[-1rem]"
             imageSticker="controllerDoodle"
-            stickerHeight="h-40"
+            stickerHeight="lg:h-40 h-16"
             opacity="opacity-100"
         />
     </div>
