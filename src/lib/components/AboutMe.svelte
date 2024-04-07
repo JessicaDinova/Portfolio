@@ -3,7 +3,7 @@
         hoi
     </div>
     <div class="text-right w-auto lg:p-0 px-8">
-        <p class="text-3xl font-light lg:text-right text-center">
+        <p class="lg:text-3xl text-2xl font-light lg:text-right text-justify">
             I am a 20 year old ICT student in the<br class="lg:block hidden"><span class="highlight">Netherlands</span>,<br class="lg:block hidden">
             trying to achieve my dream of <span class="highlight">designing</span><br class="lg:block hidden">and creating
             beautiful <span class="highlight">websites</span> for people<br class="lg:block hidden">all around the world.<br class="lg:block hidden">

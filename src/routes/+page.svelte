@@ -51,7 +51,7 @@
     <div class="lg:h-screen h-[250vh]" id="projects">
         <Projects />
     </div>
-    <!-- <div class="h-screen" id="boatHaven">
+    <div class="h-screen" id="boatHaven">
         <BoatHaven />
     </div>
     <div class="h-screen" id="curiousVillage">
@@ -62,6 +62,6 @@
     </div>
     <div class="h-screen" id="screensaver">
         <Screensaver />
-    </div> -->
+    </div>
 </div>
 <svelte:window bind:scrollY={y}/>
