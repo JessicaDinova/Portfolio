@@ -21,22 +21,16 @@
     let fullScreen;
     let screenElement;
     let projectHeight;
-    let boatHeight;
     let villageHeight;
-    let looneyHeight;
     let screenHeight;
-    let aboutHeight;
     let skillsHeight;
     onMount(() => {
         fullScreen = document.body.scrollHeight;
         screenElement = document.getElementById("home").scrollHeight;
         projectHeight = fullScreen - (screenElement * 5);
-        boatHeight = fullScreen - (screenElement * 4);
-        villageHeight = fullScreen - (screenElement * 3);
-        looneyHeight = fullScreen - (screenElement * 2);
+        villageHeight = (fullScreen - (screenElement * 3) - 70);
         screenHeight = fullScreen - screenElement - document.getElementById("nav").scrollHeight;
-        aboutHeight = fullScreen - (screenElement * 7);
-        skillsHeight = fullScreen - (screenElement * 6);
+        skillsHeight = (fullScreen - (screenElement * 6)) / 1.4;
 	})    
 </script>
 
@@ -51,11 +45,11 @@
     }
  </style>
 
-<nav id="nav" class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light {((y >= projectHeight && y < villageHeight )|| y >= screenHeight ) ? 'colorOut text-white' : 'colorIn text-black'}">
-    <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < screenElement ? 'highlight' : ''}">Home</a>
-    <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y >= screenElement && y < skillsHeight) ? 'highlight' : ''}">About Me</a>
-    <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y >= skillsHeight && y < projectHeight) ? 'highlight' : ''}">My Skills</a>
-    <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < projectHeight) ? '' : ((y >= projectHeight && y < villageHeight ) || y >= screenHeight ) ? 'highlightDark' : 'highlight'}">Projects</a>
+<nav id="nav" class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light {((y >= (projectHeight - 70) && y < villageHeight)|| y >= screenHeight ) ? 'colorOut text-white' : 'colorIn text-black'}">
+    <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < (screenElement / 2) ? 'highlight' : ''}">Home</a>
+    <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y >= (screenElement / 2) && y < skillsHeight) ? 'highlight' : ''}">About Me</a>
+    <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y >= skillsHeight && y < (projectHeight / 1.2)) ? 'highlight' : ''}">My Skills</a>
+    <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y <= (projectHeight / 1.2)) ? '' : ((y >= (projectHeight - 70) && y < villageHeight) || y >= screenHeight ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
 <div class="lg:overflow-y-auto overflow-hidden h-full flex-col items-center">
