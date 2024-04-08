@@ -7,6 +7,7 @@
     import CuriousVillage from "$lib/components/CuriousVillage.svelte";
     import Looney from "$lib/components/Looney.svelte";
     import Screensaver from "$lib/components/Screensaver.svelte";
+    import { onMount } from "svelte";
 
     function scrollIntoView({ target }) {
         const el = document.querySelector(target.getAttribute("href"));
@@ -17,6 +18,26 @@
     }
 
     let y;
+    let fullScreen;
+    let screenElement;
+    let projectHeight;
+    let boatHeight;
+    let villageHeight;
+    let looneyHeight;
+    let screenHeight;
+    let aboutHeight;
+    let skillsHeight;
+    onMount(() => {
+        fullScreen = document.body.scrollHeight;
+        screenElement = document.getElementById("home").scrollHeight;
+        projectHeight = fullScreen - (screenElement * 5);
+        boatHeight = fullScreen - (screenElement * 4);
+        villageHeight = fullScreen - (screenElement * 3);
+        looneyHeight = fullScreen - (screenElement * 2);
+        screenHeight = fullScreen - screenElement - document.getElementById("nav").scrollHeight;
+        aboutHeight = fullScreen - (screenElement * 7);
+        skillsHeight = fullScreen - (screenElement * 6);
+	})    
 </script>
 
 <style>
@@ -30,12 +51,11 @@
     }
  </style>
 
-
-<nav class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light bg-cream-100 {((y > 2108 && y < 3590 )|| y > 5050 ) ? 'colorOut text-white' : 'colorIn text-black'}">
-    <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < 700 ? 'highlight' : ''}">Home</a>
-    <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y > 699 && y < 1404) ? 'highlight' : ''}">About Me</a>
-    <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y > 1403 && y < 2124) ? 'highlight' : ''}">My Skills</a>
-    <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < 2123) ? '' : ((y > 2108 && y < 3590 )|| y > 5050 ) ? 'highlightDark' : 'highlight'}">Projects</a>
+<nav id="nav" class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light {((y >= projectHeight && y < villageHeight )|| y >= screenHeight ) ? 'colorOut text-white' : 'colorIn text-black'}">
+    <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < screenElement ? 'highlight' : ''}">Home</a>
+    <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y >= screenElement && y < skillsHeight) ? 'highlight' : ''}">About Me</a>
+    <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y >= skillsHeight && y < projectHeight) ? 'highlight' : ''}">My Skills</a>
+    <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y < projectHeight) ? '' : ((y >= projectHeight && y < villageHeight ) || y >= screenHeight ) ? 'highlightDark' : 'highlight'}">Projects</a>
 </nav>
 
 <div class="lg:overflow-y-auto overflow-hidden h-full flex-col items-center">
