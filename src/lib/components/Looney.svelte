@@ -21,7 +21,12 @@
             <Project image="looneyFull" scale="lg:h-[33rem] h-[18rem]"/>
         </div>
         <div class="lg:text-right text-justify">
-            <h1 class="lg:text-5xl text-3xl lg:mb-12 mb-3 font-serif uppercase lg:text-right text-center">Looney</h1>
+            <div class="lg:mb-10 mb-3 flex flex-row-reverse gap-4 items-center">
+                <h1 class="lg:text-5xl text-3xl font-serif uppercase lg:text-right text-center">Looney</h1>
+                <a target="_blank" href="https://github.com/Team-07-Looney/looney-general">
+                    <img class="h-[2rem]" src="doodles/github.png" alt="github">
+                </a>
+            </div>
             <p class="lg:text-[1.6rem] text-[1.2rem] font-light lg:p-0 px-12">
                 This application allows users to keep track of <br class="lg:block hidden">their <span class="highlight">habits,
                 emotions </span> and deepest <span class="highlight">thoughts</span><br class="lg:block hidden">that connect to their emotions. 
@@ -46,7 +51,7 @@
             opacity="opacity-100"/>
 
             <BorderSticker
-            leftOfset="lg:ml-[47rem] ml-[-17rem]"
+            leftOfset="lg:ml-[40rem] ml-[-17rem]"
             topOfset="lg:mt-[-30rem] mt-[-44rem]"
             imageSticker="cupDoodle"
             stickerHeight="lg:h-32 h-24"

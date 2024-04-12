@@ -45,11 +45,12 @@
     }
  </style>
 
-<nav id="nav" class="w-full lg:flex flex-row gap-56 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light {((y >= (projectHeight - 70) && y < villageHeight)|| y >= screenHeight ) ? 'colorOut text-white' : 'colorIn text-black'}">
+<nav id="nav" class="w-full lg:flex flex-row gap-40 items-center hidden justify-center text-center fixed z-[90] text-[1.8rem] py-5 font-light {((y >= (projectHeight - 70) && y < villageHeight)|| y >= screenHeight ) ? 'colorOut text-white' : 'colorIn text-black'}">
     <a href="#home" on:click|preventDefault={scrollIntoView} class="{y < (screenElement / 2) ? 'highlight' : ''}">Home</a>
     <a href="#aboutMe" on:click|preventDefault={scrollIntoView} class="{(y >= (screenElement / 2) && y < skillsHeight) ? 'highlight' : ''}">About Me</a>
     <a href="#skills" on:click|preventDefault={scrollIntoView} class="{(y >= skillsHeight && y < (projectHeight / 1.2)) ? 'highlight' : ''}">My Skills</a>
     <a href="#projects" on:click|preventDefault={scrollIntoView} class="{(y <= (projectHeight / 1.2)) ? '' : ((y >= (projectHeight - 70) && y < villageHeight) || y >= screenHeight ) ? 'highlightDark' : 'highlight'}">Projects</a>
+    <a class="flex flex-row items-center" target="_blank" href="cv/cv.pdf"><img class="h-[2rem]" src="stars/starOne.png" alt="star">CV<img class="h-[2rem]" src="stars/starOne.png" alt="star"></a>
 </nav>
 
 <div class="lg:overflow-y-auto overflow-hidden h-full flex-col items-center">
