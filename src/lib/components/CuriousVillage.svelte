@@ -22,12 +22,13 @@
         </div>
 
         <div class="lg:text-left text-justify">
-            <div class="flex flex-row gap-4 items-center h-full mb-4 ">
+            <div class="flex flex-row gap-4 items-center h-full mb-4">
                 <h1 class="lg:text-4xl text-2xl font-serif uppercase lg:text-left text-center">Curious village</h1>
                 <a target="_blank" href="https://github.com/HZ-2223/oop-team22">
                     <img class="h-[2rem]" src="doodles/github.png" alt="github">
                 </a>
             </div>
+            <a target="_blank" href="https://hz-2223.github.io/oop-team22/"><p class="text-xl underline font-light"><span class="highlight">Play the game!</span></p></a>
             <p class="lg:text-[1.8rem] text-[1.3rem] font-light lg:p-0 px-10">
                 My first project in school was to create an<br class="lg:block hidden"><span class="highlight">educational
                 game</span> concerning data safety <br class="lg:block hidden">for children. Our game was

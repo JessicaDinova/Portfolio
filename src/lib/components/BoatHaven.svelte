@@ -16,7 +16,7 @@
         </div>
         <div class="lg:text-right text-center text-white">
             <h1 class="lg:text-4xl text-2xl font-serif uppercase">Rent a boat parking space</h1>
-            <a target="_blank" href="https://ligplaatsenzeeland.nl"><p class="mt-8 text-xl underline"><span class="highlightDark">lightplaatsenzeeland.nl</span></p></a>
+            <a target="_blank" href="https://ligplaatsenzeeland.nl"><p class="mt-8 text-xl underline font-light"><span class="highlightDark">lightplaatsenzeeland.nl</span></p></a>
             <p class="lg:text-[1.8rem] text-[1.3rem] font-light lg:text-right text-justify lg:p-0 px-7">
                 Me and my buddies got an opportunity to<br class="lg:block hidden">
                 <span class="highlightDark">create a website</span>
